@@ -1,0 +1,32 @@
+@import "../../index.scss";
+
+.creators_title {
+  font-size: $fz-28;
+  color: $clr-white;
+  padding: 6rem 0 2rem 0;
+}
+.creators {
+  padding: 0rem 0 6rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-content: center;
+  gap: 1rem;
+  .creator {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+    height: 453px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 2rem;
+    p {
+      color: $clr-black;
+      font-size: $fz-20;
+    }
+    span {
+      color: $clr-grey;
+      display: grid;
+      place-self: start;
+    }
+  }
+}

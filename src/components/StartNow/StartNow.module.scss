@@ -1,0 +1,25 @@
+@import "../../index.scss";
+
+.start_now {
+  background-image: url("../../assets/images/second_hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 728px;
+  display: grid;
+  place-content: center;
+  h1 {
+    font-size: $fz-54;
+  }
+  button {
+    display: grid;
+    place-self: center;
+    align-items: center;
+    margin-top: 60px;
+    background: $clr-blue;
+    border-radius: 8px;
+    color: $clr-white;
+    width: 114px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,29 @@
+@import "./reset.scss";
+
+// variables
+$ff-main: "Roboto", sans-serif;
+
+$bg-main: #121214;
+$bg-white: #ffff;
+
+$clr-blue: #0033ff;
+$clr-white: #ffff;
+$clr-grey: #a6a8ad;
+$clr-black: #000000;
+
+$fz-12: 12px;
+$fz-16: 16px;
+$fz-20: 20px;
+$fz-28: 28px;
+$fz-54: 54px;
+$fz-72: 72px;
+
+$fw-400: 400;
+
+:root {
+  font-family: $ff-main;
+  font-size: $fz-16;
+  font-weight: $fw-400;
+  background-color: #121214;
+  color: $bg-white;
+}

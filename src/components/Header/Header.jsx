@@ -1,0 +1,35 @@
+import React from "react";
+import styles from "./Header.module.scss";
+import logo from "../../assets/images/logo.png";
+
+function Header() {
+  return (
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <div className={styles.navbar}>
+          <div>
+            <img src={logo} alt="logo" />
+          </div>
+          <nav>
+            <ul>
+              <li>Sounds</li>
+              <li>Skills</li>
+              <li>Plugins</li>
+              <li>Studio</li>
+              <li>Community</li>
+              <li>Blog</li>
+              <li>Pricing</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div className={styles.buttons}>
+          <button>Login</button>
+          <button>Sign up</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Header;

@@ -1,0 +1,42 @@
+@import "../../index.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 25px;
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    color: $clr-grey;
+    nav {
+      ul {
+        display: flex;
+        gap: 1.2rem;
+        li:hover {
+          color: $clr-white;
+        }
+      }
+    }
+  }
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    button:first-child {
+      background-color: transparent;
+      border: 1px solid transparent;
+      color: $clr-grey;
+    }
+    button:first-child:hover {
+      border: 1px solid $clr-grey;
+    }
+    button {
+      padding: 8px 21px;
+      background: $bg-white;
+      border: 1px solid $clr-white;
+
+      border-radius: 32px;
+    }
+  }
+}
