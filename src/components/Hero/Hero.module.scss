@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 1rem;
     position: absolute;
     background-color: $clr-blue;
@@ -36,13 +37,17 @@
   .hero {
     height: 744px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     place-items: center;
+
     div {
       display: grid;
       gap: 2rem;
       h1 {
         font-size: $fz-72;
+        @media (max-width: 768px) {
+          // font-size: $fz-12;
+        }
       }
       p {
         max-width: 420px;

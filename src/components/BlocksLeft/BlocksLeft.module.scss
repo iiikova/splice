@@ -4,7 +4,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 4rem 0 1rem 0;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
   .image {
+    @media (max-width: 768px) {
+      padding: 1rem 0;
+    }
   }
   .text {
     display: grid;
@@ -12,6 +18,9 @@
 
     gap: 1rem;
     padding-right: 10rem;
+    @media (max-width: 425px) {
+      padding: 0;
+    }
     span {
       color: $clr-grey;
       font-size: $fz-12;

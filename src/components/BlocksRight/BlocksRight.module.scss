@@ -4,7 +4,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 4rem 0 1rem 0;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
   .image {
+    display: grid;
+    place-self: end;
+    @media (max-width: 768px) {
+      padding: 1rem 0;
+    }
   }
   .text {
     display: grid;
@@ -12,6 +20,11 @@
     place-items: end;
     gap: 1rem;
     padding-left: 10rem;
+
+    @media (max-width: 768px) {
+      padding: 0;
+      order: -1;
+    }
     span {
       color: $clr-grey;
       font-size: $fz-12;

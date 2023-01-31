@@ -19,8 +19,9 @@ function Hero() {
             🤘 Get free Sounds when you start a trial & 4 months off a Sounds+
             annual plan.
           </p>
-          <a>Click here</a>
-          <span onClick={handleHide}>X</span>
+          <a href="#" onClick={handleHide}>
+            Click here
+          </a>
         </div>
       ) : null}
 
@@ -34,7 +35,6 @@ function Hero() {
             </p>
             <button>Try free</button>
           </div>
-          <div></div>
         </div>
       </div>
       <div className={styles.learn_more}>
